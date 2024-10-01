@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operators</title>
+</head>
+<body>
+    <div class="yyy">
+        <h1>Rest Operators</h1>
+
+
+
+        <script>
+            function sandhYa(name, ...myCollections){
+                let exampleValue = 0;
+
+                for(const s in myCollections){
+                    exampleValue += myCollections[s]
+                }
+                document.write(name, exampleValue)
+            }
+            sandhYa("Radha", 10,20, 40, 50, 30, "Marks")
+        </script>
+    </div>
+</body>
+</html>

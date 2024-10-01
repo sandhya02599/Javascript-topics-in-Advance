@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operators</title>
+</head>
+<body>
+    <h1>Spread operators</h1>
+
+
+    <script>
+        // Array //
+        const games = ["Cricket", "Football", "Tennis"];
+        const players = ["Dhoni", "Richard", "Pace"];
+    
+        const group = [...games, ...players];
+        document.write(group + "<br>");
+
+
+
+        //objects//
+
+        const FirstName = {
+            fname :  "Sandhya"
+        }
+        const LastName = {
+            lname: "Rani"
+        }
+
+        const fullName = {...FirstName, ...LastName}
+        console.log(fullName)
+
+        document.write(fullName.fname, fullName.lname);
+    </script>
+    
+</body>
+</html>
